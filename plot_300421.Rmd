@@ -1,0 +1,67 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+```{r library}
+library(tidyverse)
+library("rprime")
+```
+
+```{r}
+lf<-list.files("DATA", pattern = "csv")
+for(i in 1:length(lf)){
+lfi <- lf[i]
+df<-read.csv(paste0("DATA/", lfi), sep = ";")
+ dfvv<-
+  df %>% 
+  filter(Procedure.Block. == "TESTVV") %>% 
+  select(offset, vvstimresp1.CRESP, vvstimresp1.RESP,
+         vvstimresp1.ACC, time) %>% 
+  mutate(deg = as.numeric(offset)/10,
+         resp_dummy = ifelse(vvstimresp1.RESP == "1",
+                             0, 1)) %>% 
+  group_by(offset, time) %>% 
+  mutate(order = row_number()) %>% 
+  mutate(ycoord = resp_dummy + order/20) %>% 
+   ungroup()
+print(table(dfvv$offset, dfvv$resp_dummy))
+
+model<-glm(resp_dummy ~ deg, family = binomial(link = "logit"), dfvv) 
+coeff<-as.data.frame(t(summary(model)$coefficients))[1,]
+colnames(coeff)<-c("intercept", "deg")
+pse <- -coeff$intercept/coeff$deg
+slope <- coeff$deg
+jnd <- log(3/slope)
+
+plot<-ggplot(dfvv, aes(x = deg, y = resp_dummy, col =time, fill = as.factor(order)))+
+  geom_hline(yintercept = 0.50, lty = "dashed", col = "grey40", size=0.7)+
+    geom_vline(xintercept = 0, lty = "dashed", col = "grey40", size=0.7)+
+  scale_x_continuous(limits=c(-2.5,2.5),breaks = seq(-2.5,2.5,0.5))+
+  geom_smooth(method = "glm", method.args = list(family = "binomial"),se = F, size=1, fill = "black")+
+  geom_point(aes(y = ycoord), size = 1.5, alpha = 1, width = 0.1, shape = 21, col = "black")+
+              # col = "black",fill="red"
+              # )+
+  # geom_point(aes(x=unlist(pse), y=0.5), fill="red", size=3, col = "black", shape=24,
+  #            stroke = 1.2)+
+  scale_y_continuous(limits=c(-0.1,1.4),breaks = seq(0,1,0.5))+
+  labs(y="% de reponse 'ligne orientee a droite'", x= "Decalage de la ligne \npar rapport a la verticale (deg)",
+       title = lfi)+
+  theme_bw(base_size = 10) +
+    facet_wrap(~time, ncol = 1)
+
+  print(plot)
+ggsave(paste0("PLOT/VV", lfi, ".pdf"), plot, width = 6, height = 8)
+ggsave(paste0("PLOT/VV", lfi, ".svg"), plot)
+# print(lfi)
+# print("SA")
+# df %>% 
+#   filter(Procedure == "TrialSA") %>% 
+#   select(TrialSA, Mouse.X) %>% 
+#   unique() %>% 
+#   mutate(sa = as.numeric(Mouse.X) - 1280) %>% 
+#   mutate(samm = (60*sa)/2560) %>% 
+#   summarise(bias_sa = mean(samm)) %>% 
+#   print(.)
+}
+```
