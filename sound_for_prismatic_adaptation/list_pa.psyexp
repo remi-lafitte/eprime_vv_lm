@@ -50,20 +50,72 @@
         <Param name="volume" updates="constant" val="1" valType="code"/>
       </SoundComponent>
     </Routine>
+    <Routine name="break_2">
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$countdown" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+    </Routine>
   </Routines>
   <Flow>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="5" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <LoopInitiator loopType="TrialHandler" name="trial_loop">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.5}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.5}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.6}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.6}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.8}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.8}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.9}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.9}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}, {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="stimuli.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="7" valType="code"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="trial_loop" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="trial"/>
     <LoopTerminator name="trial_loop"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'countdown': 30}, {'countdown': 29}, {'countdown': 28}, {'countdown': 27}, {'countdown': 26}, {'countdown': 25}, {'countdown': 24}, {'countdown': 23}, {'countdown': 22}, {'countdown': 21}, {'countdown': 20}, {'countdown': 19}, {'countdown': 18}, {'countdown': 17}, {'countdown': 16}, {'countdown': 15}, {'countdown': 14}, {'countdown': 13}, {'countdown': 12}, {'countdown': 11}, {'countdown': 10}, {'countdown': 9}, {'countdown': 8}, {'countdown': 7}, {'countdown': 6}, {'countdown': 5}, {'countdown': 4}, {'countdown': 3}, {'countdown': 2}, {'countdown': 1}, {'countdown': 0}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="countdown.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="break_2"/>
+    <LoopTerminator name="trials_2"/>
+    <LoopTerminator name="trials"/>
   </Flow>
 </PsychoPy2experiment>

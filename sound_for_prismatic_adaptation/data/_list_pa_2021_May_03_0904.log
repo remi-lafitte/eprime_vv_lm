@@ -1,0 +1,86 @@
+8.2166 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+54.7690 	DATA 	Keypress: return
+55.1233 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001C33486EF28>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001C3348D4550>, multiSample=False, name='window1', numSamples=2, pos=[810.0, 290.0], screen=0, size=array([300, 500]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+55.1234 	EXP 	window1: mouseVisible = True
+55.1235 	EXP 	window1: recordFrameIntervals = False
+55.2891 	EXP 	window1: recordFrameIntervals = True
+55.4734 	EXP 	window1: recordFrameIntervals = False
+55.9693 	EXP 	Sound sound_exposure set volume 1.000
+56.0187 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+56.0199 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+56.0203 	EXP 	New trial (rep=0, index=0): None
+56.0360 	EXP 	Imported stimuli.xlsx as conditions, 50 conditions, 2 params
+56.0366 	EXP 	Created sequence: random, trialTypes=50, nReps=1, seed=None
+56.0370 	EXP 	New trial (rep=0, index=0): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+56.0672 	WARNING 	Got keycode {} but that code isn't yet known
+56.0672 	WARNING 	Keypress was given unknown key code (174)
+56.2936 	WARNING 	Got keycode {} but that code isn't yet known
+56.2936 	WARNING 	Keypress was given unknown key code (174)
+56.4931 	WARNING 	Got keycode {} but that code isn't yet known
+56.4932 	WARNING 	Keypress was given unknown key code (174)
+56.6764 	WARNING 	Got keycode {} but that code isn't yet known
+56.6765 	WARNING 	Keypress was given unknown key code (174)
+57.5278 	EXP 	New trial (rep=0, index=1): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+57.5484 	WARNING 	Got keycode {} but that code isn't yet known
+57.5486 	WARNING 	Keypress was given unknown key code (174)
+57.7122 	WARNING 	Got keycode {} but that code isn't yet known
+57.7123 	WARNING 	Keypress was given unknown key code (174)
+57.8756 	WARNING 	Got keycode {} but that code isn't yet known
+57.8757 	WARNING 	Keypress was given unknown key code (174)
+59.0285 	EXP 	New trial (rep=0, index=2): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+60.3781 	WARNING 	Got keycode {} but that code isn't yet known
+60.3782 	WARNING 	Keypress was given unknown key code (176)
+60.5283 	EXP 	New trial (rep=0, index=3): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+60.6422 	WARNING 	Got keycode {} but that code isn't yet known
+60.6423 	WARNING 	Keypress was given unknown key code (176)
+60.8281 	WARNING 	Got keycode {} but that code isn't yet known
+60.8282 	WARNING 	Keypress was given unknown key code (176)
+62.0286 	EXP 	New trial (rep=0, index=4): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+63.5301 	EXP 	New trial (rep=0, index=5): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+65.0294 	EXP 	New trial (rep=0, index=6): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+66.5304 	EXP 	New trial (rep=0, index=7): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+68.0303 	EXP 	New trial (rep=0, index=8): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+69.5304 	EXP 	New trial (rep=0, index=9): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+71.0303 	EXP 	New trial (rep=0, index=10): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+72.5312 	EXP 	New trial (rep=0, index=11): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+74.0313 	EXP 	New trial (rep=0, index=12): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+75.5313 	EXP 	New trial (rep=0, index=13): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+77.0334 	EXP 	New trial (rep=0, index=14): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+78.5323 	EXP 	New trial (rep=0, index=15): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+80.0329 	EXP 	New trial (rep=0, index=16): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+81.5339 	EXP 	New trial (rep=0, index=17): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+83.0328 	EXP 	New trial (rep=0, index=18): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+84.5337 	EXP 	New trial (rep=0, index=19): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+86.0340 	EXP 	New trial (rep=0, index=20): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+87.5345 	EXP 	New trial (rep=0, index=21): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+89.0493 	EXP 	New trial (rep=0, index=22): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+90.5513 	EXP 	New trial (rep=0, index=23): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+92.0523 	EXP 	New trial (rep=0, index=24): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+93.5526 	EXP 	New trial (rep=0, index=25): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+95.0520 	EXP 	New trial (rep=0, index=26): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+96.5526 	EXP 	New trial (rep=0, index=27): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+98.0528 	EXP 	New trial (rep=0, index=28): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+99.5535 	EXP 	New trial (rep=0, index=29): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+101.0534 	EXP 	New trial (rep=0, index=30): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+102.5546 	EXP 	New trial (rep=0, index=31): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+104.0545 	EXP 	New trial (rep=0, index=32): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+105.5544 	EXP 	New trial (rep=0, index=33): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+107.0546 	EXP 	New trial (rep=0, index=34): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+108.5561 	EXP 	New trial (rep=0, index=35): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+110.0556 	EXP 	New trial (rep=0, index=36): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+111.5554 	EXP 	New trial (rep=0, index=37): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+113.0563 	EXP 	New trial (rep=0, index=38): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+114.5582 	EXP 	New trial (rep=0, index=39): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+116.0564 	EXP 	New trial (rep=0, index=40): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+117.5572 	EXP 	New trial (rep=0, index=41): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+119.0576 	EXP 	New trial (rep=0, index=42): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+120.5580 	EXP 	New trial (rep=0, index=43): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+122.0590 	EXP 	New trial (rep=0, index=44): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+123.5591 	EXP 	New trial (rep=0, index=45): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+125.0583 	EXP 	New trial (rep=0, index=46): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+126.5591 	EXP 	New trial (rep=0, index=47): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+128.0597 	EXP 	New trial (rep=0, index=48): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+129.5582 	EXP 	New trial (rep=0, index=49): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+131.0600 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+131.0608 	EXP 	New trial (rep=0, index=0): None
+131.2140 	EXP 	window1: mouseVisible = True

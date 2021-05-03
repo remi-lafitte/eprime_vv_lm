@@ -25,6 +25,7 @@ df<-read.csv(paste0("DATA/", lfi), sep = ";")
   mutate(order = row_number()) %>% 
   mutate(ycoord = resp_dummy + order/20) %>% 
    ungroup()
+print(i)
 print(table(dfvv$offset, dfvv$resp_dummy))
 
 model<-glm(resp_dummy ~ deg, family = binomial(link = "logit"), dfvv) 
