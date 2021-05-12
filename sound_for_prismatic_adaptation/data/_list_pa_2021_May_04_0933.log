@@ -1,0 +1,884 @@
+6.2995 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+80.5834 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000255C68DEF28>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000255C6944550>, multiSample=False, name='window1', numSamples=2, pos=[810.0, 290.0], screen=0, size=array([300, 500]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+80.5837 	EXP 	window1: mouseVisible = True
+80.5838 	EXP 	window1: recordFrameIntervals = False
+80.7488 	EXP 	window1: recordFrameIntervals = True
+80.9328 	EXP 	window1: recordFrameIntervals = False
+81.6566 	EXP 	Sound sound_exposure set volume 1.000
+81.7170 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+81.7184 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+81.7190 	EXP 	New trial (rep=0, index=0): None
+81.7697 	EXP 	Imported stimuli.xlsx as conditions, 50 conditions, 2 params
+81.7706 	EXP 	Created sequence: random, trialTypes=50, nReps=1, seed=None
+81.7711 	EXP 	New trial (rep=0, index=0): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+83.2872 	EXP 	New trial (rep=0, index=1): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+84.8209 	EXP 	New trial (rep=0, index=2): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+86.3211 	EXP 	New trial (rep=0, index=3): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+87.8214 	EXP 	New trial (rep=0, index=4): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+89.3223 	EXP 	New trial (rep=0, index=5): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+90.8221 	EXP 	New trial (rep=0, index=6): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+92.3251 	EXP 	New trial (rep=0, index=7): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+93.8232 	EXP 	New trial (rep=0, index=8): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+95.3389 	EXP 	New trial (rep=0, index=9): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+96.8403 	EXP 	New trial (rep=0, index=10): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+98.3398 	EXP 	New trial (rep=0, index=11): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+99.8410 	EXP 	New trial (rep=0, index=12): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+101.3409 	EXP 	New trial (rep=0, index=13): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+102.8409 	EXP 	New trial (rep=0, index=14): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+104.3421 	EXP 	New trial (rep=0, index=15): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+105.8424 	EXP 	New trial (rep=0, index=16): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+107.3420 	EXP 	New trial (rep=0, index=17): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+108.8427 	EXP 	New trial (rep=0, index=18): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+110.3424 	EXP 	New trial (rep=0, index=19): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+111.8440 	EXP 	New trial (rep=0, index=20): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+113.3422 	EXP 	New trial (rep=0, index=21): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+114.8449 	EXP 	New trial (rep=0, index=22): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+116.3450 	EXP 	New trial (rep=0, index=23): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+117.8446 	EXP 	New trial (rep=0, index=24): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+119.3470 	EXP 	New trial (rep=0, index=25): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+120.8462 	EXP 	New trial (rep=0, index=26): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+122.3463 	EXP 	New trial (rep=0, index=27): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+123.8469 	EXP 	New trial (rep=0, index=28): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+125.3451 	EXP 	New trial (rep=0, index=29): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+126.8477 	EXP 	New trial (rep=0, index=30): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+128.3469 	EXP 	New trial (rep=0, index=31): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+129.8469 	EXP 	New trial (rep=0, index=32): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+131.3478 	EXP 	New trial (rep=0, index=33): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+132.8466 	EXP 	New trial (rep=0, index=34): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+134.3477 	EXP 	New trial (rep=0, index=35): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+135.8479 	EXP 	New trial (rep=0, index=36): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+137.3475 	EXP 	New trial (rep=0, index=37): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+138.8483 	EXP 	New trial (rep=0, index=38): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+140.3488 	EXP 	New trial (rep=0, index=39): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+141.8498 	EXP 	New trial (rep=0, index=40): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+143.3493 	EXP 	New trial (rep=0, index=41): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+144.8494 	EXP 	New trial (rep=0, index=42): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+146.3493 	EXP 	New trial (rep=0, index=43): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+147.8509 	EXP 	New trial (rep=0, index=44): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+149.3510 	EXP 	New trial (rep=0, index=45): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+150.8511 	EXP 	New trial (rep=0, index=46): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+152.3510 	EXP 	New trial (rep=0, index=47): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+153.8510 	EXP 	New trial (rep=0, index=48): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+155.3516 	EXP 	New trial (rep=0, index=49): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+156.8928 	EXP 	Imported countdown.xlsx as conditions, 31 conditions, 1 params
+156.8932 	EXP 	Created sequence: sequential, trialTypes=31, nReps=1, seed=None
+156.8935 	EXP 	New trial (rep=0, index=0): {'countdown': 30}
+157.1387 	EXP 	text: text = 30
+157.1387 	EXP 	text: autoDraw = True
+157.8674 	EXP 	New trial (rep=0, index=1): {'countdown': 29}
+157.8972 	EXP 	text: autoDraw = False
+157.8972 	EXP 	text: text = 29
+157.8972 	EXP 	text: autoDraw = True
+158.8666 	EXP 	New trial (rep=0, index=2): {'countdown': 28}
+158.8974 	EXP 	text: autoDraw = False
+158.8974 	EXP 	text: text = 28
+158.8974 	EXP 	text: autoDraw = True
+159.8669 	EXP 	New trial (rep=0, index=3): {'countdown': 27}
+159.8973 	EXP 	text: autoDraw = False
+159.8973 	EXP 	text: text = 27
+159.8973 	EXP 	text: autoDraw = True
+160.8670 	EXP 	New trial (rep=0, index=4): {'countdown': 26}
+160.8978 	EXP 	text: autoDraw = False
+160.8978 	EXP 	text: text = 26
+160.8978 	EXP 	text: autoDraw = True
+161.8664 	EXP 	New trial (rep=0, index=5): {'countdown': 25}
+161.8972 	EXP 	text: autoDraw = False
+161.8972 	EXP 	text: text = 25
+161.8972 	EXP 	text: autoDraw = True
+162.8672 	EXP 	New trial (rep=0, index=6): {'countdown': 24}
+162.8979 	EXP 	text: autoDraw = False
+162.8979 	EXP 	text: text = 24
+162.8979 	EXP 	text: autoDraw = True
+163.8675 	EXP 	New trial (rep=0, index=7): {'countdown': 23}
+163.8981 	EXP 	text: autoDraw = False
+163.8981 	EXP 	text: text = 23
+163.8981 	EXP 	text: autoDraw = True
+164.8679 	EXP 	New trial (rep=0, index=8): {'countdown': 22}
+164.8986 	EXP 	text: autoDraw = False
+164.8986 	EXP 	text: text = 22
+164.8986 	EXP 	text: autoDraw = True
+165.8688 	EXP 	New trial (rep=0, index=9): {'countdown': 21}
+165.8987 	EXP 	text: autoDraw = False
+165.8987 	EXP 	text: text = 21
+165.8987 	EXP 	text: autoDraw = True
+166.8691 	EXP 	New trial (rep=0, index=10): {'countdown': 20}
+166.8983 	EXP 	text: autoDraw = False
+166.8983 	EXP 	text: text = 20
+166.8983 	EXP 	text: autoDraw = True
+167.8688 	EXP 	New trial (rep=0, index=11): {'countdown': 19}
+167.8988 	EXP 	text: autoDraw = False
+167.8988 	EXP 	text: text = 19
+167.8988 	EXP 	text: autoDraw = True
+168.8694 	EXP 	New trial (rep=0, index=12): {'countdown': 18}
+168.8988 	EXP 	text: autoDraw = False
+168.8988 	EXP 	text: text = 18
+168.8988 	EXP 	text: autoDraw = True
+169.8697 	EXP 	New trial (rep=0, index=13): {'countdown': 17}
+169.8996 	EXP 	text: autoDraw = False
+169.8996 	EXP 	text: text = 17
+169.8996 	EXP 	text: autoDraw = True
+170.8699 	EXP 	New trial (rep=0, index=14): {'countdown': 16}
+170.9004 	EXP 	text: autoDraw = False
+170.9004 	EXP 	text: text = 16
+170.9004 	EXP 	text: autoDraw = True
+171.8700 	EXP 	New trial (rep=0, index=15): {'countdown': 15}
+171.9004 	EXP 	text: autoDraw = False
+171.9004 	EXP 	text: text = 15
+171.9004 	EXP 	text: autoDraw = True
+172.8699 	EXP 	New trial (rep=0, index=16): {'countdown': 14}
+172.9010 	EXP 	text: autoDraw = False
+172.9010 	EXP 	text: text = 14
+172.9010 	EXP 	text: autoDraw = True
+173.8703 	EXP 	New trial (rep=0, index=17): {'countdown': 13}
+173.9005 	EXP 	text: autoDraw = False
+173.9005 	EXP 	text: text = 13
+173.9005 	EXP 	text: autoDraw = True
+174.8707 	EXP 	New trial (rep=0, index=18): {'countdown': 12}
+174.9003 	EXP 	text: autoDraw = False
+174.9003 	EXP 	text: text = 12
+174.9003 	EXP 	text: autoDraw = True
+175.8705 	EXP 	New trial (rep=0, index=19): {'countdown': 11}
+175.9005 	EXP 	text: autoDraw = False
+175.9005 	EXP 	text: text = 11
+175.9005 	EXP 	text: autoDraw = True
+176.8706 	EXP 	New trial (rep=0, index=20): {'countdown': 10}
+176.9008 	EXP 	text: autoDraw = False
+176.9008 	EXP 	text: text = 10
+176.9008 	EXP 	text: autoDraw = True
+177.8541 	EXP 	New trial (rep=0, index=21): {'countdown': 9}
+177.8846 	EXP 	text: autoDraw = False
+177.8846 	EXP 	text: text = 9
+177.8846 	EXP 	text: autoDraw = True
+178.8544 	EXP 	New trial (rep=0, index=22): {'countdown': 8}
+178.8846 	EXP 	text: autoDraw = False
+178.8846 	EXP 	text: text = 8
+178.8846 	EXP 	text: autoDraw = True
+179.8544 	EXP 	New trial (rep=0, index=23): {'countdown': 7}
+179.8847 	EXP 	text: autoDraw = False
+179.8847 	EXP 	text: text = 7
+179.8847 	EXP 	text: autoDraw = True
+180.8550 	EXP 	New trial (rep=0, index=24): {'countdown': 6}
+180.8851 	EXP 	text: autoDraw = False
+180.8851 	EXP 	text: text = 6
+180.8851 	EXP 	text: autoDraw = True
+181.8547 	EXP 	New trial (rep=0, index=25): {'countdown': 5}
+181.8852 	EXP 	text: autoDraw = False
+181.8852 	EXP 	text: text = 5
+181.8852 	EXP 	text: autoDraw = True
+182.8554 	EXP 	New trial (rep=0, index=26): {'countdown': 4}
+182.8857 	EXP 	text: autoDraw = False
+182.8857 	EXP 	text: text = 4
+182.8857 	EXP 	text: autoDraw = True
+183.8551 	EXP 	New trial (rep=0, index=27): {'countdown': 3}
+183.8858 	EXP 	text: autoDraw = False
+183.8858 	EXP 	text: text = 3
+183.8858 	EXP 	text: autoDraw = True
+184.8551 	EXP 	New trial (rep=0, index=28): {'countdown': 2}
+184.8858 	EXP 	text: autoDraw = False
+184.8858 	EXP 	text: text = 2
+184.8858 	EXP 	text: autoDraw = True
+185.8554 	EXP 	New trial (rep=0, index=29): {'countdown': 1}
+185.8856 	EXP 	text: autoDraw = False
+185.8856 	EXP 	text: text = 1
+185.8856 	EXP 	text: autoDraw = True
+186.8556 	EXP 	New trial (rep=0, index=30): {'countdown': 0}
+186.8863 	EXP 	text: autoDraw = False
+186.8863 	EXP 	text: text = 0
+186.8863 	EXP 	text: autoDraw = True
+187.8560 	EXP 	New trial (rep=1, index=0): None
+187.8905 	EXP 	Imported stimuli.xlsx as conditions, 50 conditions, 2 params
+187.8912 	EXP 	Created sequence: random, trialTypes=50, nReps=1, seed=None
+187.8916 	EXP 	New trial (rep=0, index=0): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+187.9019 	EXP 	text: autoDraw = False
+189.3942 	EXP 	New trial (rep=0, index=1): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+190.8930 	EXP 	New trial (rep=0, index=2): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+192.3928 	EXP 	New trial (rep=0, index=3): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+193.8935 	EXP 	New trial (rep=0, index=4): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+195.3945 	EXP 	New trial (rep=0, index=5): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+196.8947 	EXP 	New trial (rep=0, index=6): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+198.3949 	EXP 	New trial (rep=0, index=7): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+199.8948 	EXP 	New trial (rep=0, index=8): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+201.3953 	EXP 	New trial (rep=0, index=9): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+202.8971 	EXP 	New trial (rep=0, index=10): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+204.3955 	EXP 	New trial (rep=0, index=11): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+205.8968 	EXP 	New trial (rep=0, index=12): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+207.3970 	EXP 	New trial (rep=0, index=13): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+208.8956 	EXP 	New trial (rep=0, index=14): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+210.3973 	EXP 	New trial (rep=0, index=15): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+211.8976 	EXP 	New trial (rep=0, index=16): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+213.3966 	EXP 	New trial (rep=0, index=17): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+214.8979 	EXP 	New trial (rep=0, index=18): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+216.3976 	EXP 	New trial (rep=0, index=19): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+217.8982 	EXP 	New trial (rep=0, index=20): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+219.3970 	EXP 	New trial (rep=0, index=21): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+220.8987 	EXP 	New trial (rep=0, index=22): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+222.3993 	EXP 	New trial (rep=0, index=23): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+223.8992 	EXP 	New trial (rep=0, index=24): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+225.3999 	EXP 	New trial (rep=0, index=25): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+226.8996 	EXP 	New trial (rep=0, index=26): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+228.4002 	EXP 	New trial (rep=0, index=27): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+229.9008 	EXP 	New trial (rep=0, index=28): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+231.4008 	EXP 	New trial (rep=0, index=29): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+232.9007 	EXP 	New trial (rep=0, index=30): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+234.4013 	EXP 	New trial (rep=0, index=31): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+235.9019 	EXP 	New trial (rep=0, index=32): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+237.4029 	EXP 	New trial (rep=0, index=33): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+238.9022 	EXP 	New trial (rep=0, index=34): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+240.4032 	EXP 	New trial (rep=0, index=35): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+241.9027 	EXP 	New trial (rep=0, index=36): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+243.4041 	EXP 	New trial (rep=0, index=37): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+244.9047 	EXP 	New trial (rep=0, index=38): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+246.4052 	EXP 	New trial (rep=0, index=39): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+247.9054 	EXP 	New trial (rep=0, index=40): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+249.4067 	EXP 	New trial (rep=0, index=41): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+250.9066 	EXP 	New trial (rep=0, index=42): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+252.4059 	EXP 	New trial (rep=0, index=43): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+253.9068 	EXP 	New trial (rep=0, index=44): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+255.4060 	EXP 	New trial (rep=0, index=45): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+256.9056 	EXP 	New trial (rep=0, index=46): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+258.4071 	EXP 	New trial (rep=0, index=47): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+259.9059 	EXP 	New trial (rep=0, index=48): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+261.4080 	EXP 	New trial (rep=0, index=49): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+262.9344 	EXP 	Imported countdown.xlsx as conditions, 31 conditions, 1 params
+262.9360 	EXP 	Created sequence: sequential, trialTypes=31, nReps=1, seed=None
+262.9369 	EXP 	New trial (rep=0, index=0): {'countdown': 30}
+262.9502 	EXP 	text: text = 30
+262.9502 	EXP 	text: autoDraw = True
+263.9229 	EXP 	New trial (rep=0, index=1): {'countdown': 29}
+263.9517 	EXP 	text: autoDraw = False
+263.9517 	EXP 	text: text = 29
+263.9517 	EXP 	text: autoDraw = True
+264.9219 	EXP 	New trial (rep=0, index=2): {'countdown': 28}
+264.9517 	EXP 	text: autoDraw = False
+264.9517 	EXP 	text: text = 28
+264.9517 	EXP 	text: autoDraw = True
+265.9226 	EXP 	New trial (rep=0, index=3): {'countdown': 27}
+265.9519 	EXP 	text: autoDraw = False
+265.9519 	EXP 	text: text = 27
+265.9519 	EXP 	text: autoDraw = True
+266.9227 	EXP 	New trial (rep=0, index=4): {'countdown': 26}
+266.9521 	EXP 	text: autoDraw = False
+266.9521 	EXP 	text: text = 26
+266.9521 	EXP 	text: autoDraw = True
+267.9230 	EXP 	New trial (rep=0, index=5): {'countdown': 25}
+267.9518 	EXP 	text: autoDraw = False
+267.9518 	EXP 	text: text = 25
+267.9518 	EXP 	text: autoDraw = True
+268.9236 	EXP 	New trial (rep=0, index=6): {'countdown': 24}
+268.9524 	EXP 	text: autoDraw = False
+268.9524 	EXP 	text: text = 24
+268.9524 	EXP 	text: autoDraw = True
+269.9233 	EXP 	New trial (rep=0, index=7): {'countdown': 23}
+269.9529 	EXP 	text: autoDraw = False
+269.9529 	EXP 	text: text = 23
+269.9529 	EXP 	text: autoDraw = True
+270.9242 	EXP 	New trial (rep=0, index=8): {'countdown': 22}
+270.9534 	EXP 	text: autoDraw = False
+270.9534 	EXP 	text: text = 22
+270.9534 	EXP 	text: autoDraw = True
+271.9238 	EXP 	New trial (rep=0, index=9): {'countdown': 21}
+271.9529 	EXP 	text: autoDraw = False
+271.9529 	EXP 	text: text = 21
+271.9529 	EXP 	text: autoDraw = True
+272.9236 	EXP 	New trial (rep=0, index=10): {'countdown': 20}
+272.9531 	EXP 	text: autoDraw = False
+272.9531 	EXP 	text: text = 20
+272.9531 	EXP 	text: autoDraw = True
+273.9235 	EXP 	New trial (rep=0, index=11): {'countdown': 19}
+273.9547 	EXP 	text: autoDraw = False
+273.9547 	EXP 	text: text = 19
+273.9547 	EXP 	text: autoDraw = True
+274.9236 	EXP 	New trial (rep=0, index=12): {'countdown': 18}
+274.9540 	EXP 	text: autoDraw = False
+274.9540 	EXP 	text: text = 18
+274.9540 	EXP 	text: autoDraw = True
+275.9246 	EXP 	New trial (rep=0, index=13): {'countdown': 17}
+275.9541 	EXP 	text: autoDraw = False
+275.9541 	EXP 	text: text = 17
+275.9541 	EXP 	text: autoDraw = True
+276.9243 	EXP 	New trial (rep=0, index=14): {'countdown': 16}
+276.9543 	EXP 	text: autoDraw = False
+276.9543 	EXP 	text: text = 16
+276.9543 	EXP 	text: autoDraw = True
+277.9249 	EXP 	New trial (rep=0, index=15): {'countdown': 15}
+277.9547 	EXP 	text: autoDraw = False
+277.9547 	EXP 	text: text = 15
+277.9547 	EXP 	text: autoDraw = True
+278.9244 	EXP 	New trial (rep=0, index=16): {'countdown': 14}
+278.9547 	EXP 	text: autoDraw = False
+278.9547 	EXP 	text: text = 14
+278.9547 	EXP 	text: autoDraw = True
+279.9099 	EXP 	New trial (rep=0, index=17): {'countdown': 13}
+279.9383 	EXP 	text: autoDraw = False
+279.9383 	EXP 	text: text = 13
+279.9383 	EXP 	text: autoDraw = True
+280.9089 	EXP 	New trial (rep=0, index=18): {'countdown': 12}
+280.9389 	EXP 	text: autoDraw = False
+280.9389 	EXP 	text: text = 12
+280.9389 	EXP 	text: autoDraw = True
+281.9088 	EXP 	New trial (rep=0, index=19): {'countdown': 11}
+281.9388 	EXP 	text: autoDraw = False
+281.9388 	EXP 	text: text = 11
+281.9388 	EXP 	text: autoDraw = True
+282.9096 	EXP 	New trial (rep=0, index=20): {'countdown': 10}
+282.9390 	EXP 	text: autoDraw = False
+282.9390 	EXP 	text: text = 10
+282.9390 	EXP 	text: autoDraw = True
+283.9093 	EXP 	New trial (rep=0, index=21): {'countdown': 9}
+283.9396 	EXP 	text: autoDraw = False
+283.9396 	EXP 	text: text = 9
+283.9396 	EXP 	text: autoDraw = True
+284.9098 	EXP 	New trial (rep=0, index=22): {'countdown': 8}
+284.9397 	EXP 	text: autoDraw = False
+284.9397 	EXP 	text: text = 8
+284.9397 	EXP 	text: autoDraw = True
+285.9096 	EXP 	New trial (rep=0, index=23): {'countdown': 7}
+285.9397 	EXP 	text: autoDraw = False
+285.9397 	EXP 	text: text = 7
+285.9397 	EXP 	text: autoDraw = True
+286.9099 	EXP 	New trial (rep=0, index=24): {'countdown': 6}
+286.9399 	EXP 	text: autoDraw = False
+286.9399 	EXP 	text: text = 6
+286.9399 	EXP 	text: autoDraw = True
+287.9106 	EXP 	New trial (rep=0, index=25): {'countdown': 5}
+287.9404 	EXP 	text: autoDraw = False
+287.9404 	EXP 	text: text = 5
+287.9404 	EXP 	text: autoDraw = True
+288.9102 	EXP 	New trial (rep=0, index=26): {'countdown': 4}
+288.9402 	EXP 	text: autoDraw = False
+288.9402 	EXP 	text: text = 4
+288.9402 	EXP 	text: autoDraw = True
+289.9108 	EXP 	New trial (rep=0, index=27): {'countdown': 3}
+289.9404 	EXP 	text: autoDraw = False
+289.9404 	EXP 	text: text = 3
+289.9404 	EXP 	text: autoDraw = True
+290.9114 	EXP 	New trial (rep=0, index=28): {'countdown': 2}
+290.9402 	EXP 	text: autoDraw = False
+290.9402 	EXP 	text: text = 2
+290.9402 	EXP 	text: autoDraw = True
+291.9108 	EXP 	New trial (rep=0, index=29): {'countdown': 1}
+291.9409 	EXP 	text: autoDraw = False
+291.9409 	EXP 	text: text = 1
+291.9409 	EXP 	text: autoDraw = True
+292.9115 	EXP 	New trial (rep=0, index=30): {'countdown': 0}
+292.9413 	EXP 	text: autoDraw = False
+292.9413 	EXP 	text: text = 0
+292.9413 	EXP 	text: autoDraw = True
+293.9121 	EXP 	New trial (rep=2, index=0): None
+293.9445 	EXP 	Imported stimuli.xlsx as conditions, 50 conditions, 2 params
+293.9453 	EXP 	Created sequence: random, trialTypes=50, nReps=1, seed=None
+293.9458 	EXP 	New trial (rep=0, index=0): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+293.9567 	EXP 	text: autoDraw = False
+295.4478 	EXP 	New trial (rep=0, index=1): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+296.9481 	EXP 	New trial (rep=0, index=2): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+298.4480 	EXP 	New trial (rep=0, index=3): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+299.9482 	EXP 	New trial (rep=0, index=4): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+301.4477 	EXP 	New trial (rep=0, index=5): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+302.9486 	EXP 	New trial (rep=0, index=6): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+304.4494 	EXP 	New trial (rep=0, index=7): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+305.9483 	EXP 	New trial (rep=0, index=8): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+307.4494 	EXP 	New trial (rep=0, index=9): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+308.9499 	EXP 	New trial (rep=0, index=10): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+310.4508 	EXP 	New trial (rep=0, index=11): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+311.9510 	EXP 	New trial (rep=0, index=12): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+313.4507 	EXP 	New trial (rep=0, index=13): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+314.9512 	EXP 	New trial (rep=0, index=14): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+316.4511 	EXP 	New trial (rep=0, index=15): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+317.9512 	EXP 	New trial (rep=0, index=16): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+319.4512 	EXP 	New trial (rep=0, index=17): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+320.9514 	EXP 	New trial (rep=0, index=18): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+322.4527 	EXP 	New trial (rep=0, index=19): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+323.9527 	EXP 	New trial (rep=0, index=20): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+325.4532 	EXP 	New trial (rep=0, index=21): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+326.9542 	EXP 	New trial (rep=0, index=22): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+328.4550 	EXP 	New trial (rep=0, index=23): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+329.9559 	EXP 	New trial (rep=0, index=24): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+331.4548 	EXP 	New trial (rep=0, index=25): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+332.9560 	EXP 	New trial (rep=0, index=26): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+334.4548 	EXP 	New trial (rep=0, index=27): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+335.9540 	EXP 	New trial (rep=0, index=28): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+337.4573 	EXP 	New trial (rep=0, index=29): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+338.9561 	EXP 	New trial (rep=0, index=30): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+340.4570 	EXP 	New trial (rep=0, index=31): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+341.9575 	EXP 	New trial (rep=0, index=32): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+343.4572 	EXP 	New trial (rep=0, index=33): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+344.9580 	EXP 	New trial (rep=0, index=34): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+346.4572 	EXP 	New trial (rep=0, index=35): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+347.9577 	EXP 	New trial (rep=0, index=36): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+349.4584 	EXP 	New trial (rep=0, index=37): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+350.9579 	EXP 	New trial (rep=0, index=38): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+352.4578 	EXP 	New trial (rep=0, index=39): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+353.9582 	EXP 	New trial (rep=0, index=40): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+355.4594 	EXP 	New trial (rep=0, index=41): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+356.9595 	EXP 	New trial (rep=0, index=42): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+358.4606 	EXP 	New trial (rep=0, index=43): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+359.9607 	EXP 	New trial (rep=0, index=44): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+361.4603 	EXP 	New trial (rep=0, index=45): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+362.9610 	EXP 	New trial (rep=0, index=46): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+364.4619 	EXP 	New trial (rep=0, index=47): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+365.9605 	EXP 	New trial (rep=0, index=48): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+367.4619 	EXP 	New trial (rep=0, index=49): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+368.9830 	EXP 	Imported countdown.xlsx as conditions, 31 conditions, 1 params
+368.9837 	EXP 	Created sequence: sequential, trialTypes=31, nReps=1, seed=None
+368.9841 	EXP 	New trial (rep=0, index=0): {'countdown': 30}
+369.0051 	EXP 	text: text = 30
+369.0051 	EXP 	text: autoDraw = True
+369.9767 	EXP 	New trial (rep=0, index=1): {'countdown': 29}
+370.0061 	EXP 	text: autoDraw = False
+370.0061 	EXP 	text: text = 29
+370.0061 	EXP 	text: autoDraw = True
+370.9763 	EXP 	New trial (rep=0, index=2): {'countdown': 28}
+371.0066 	EXP 	text: autoDraw = False
+371.0066 	EXP 	text: text = 28
+371.0066 	EXP 	text: autoDraw = True
+371.9770 	EXP 	New trial (rep=0, index=3): {'countdown': 27}
+372.0067 	EXP 	text: autoDraw = False
+372.0067 	EXP 	text: text = 27
+372.0067 	EXP 	text: autoDraw = True
+372.9773 	EXP 	New trial (rep=0, index=4): {'countdown': 26}
+373.0073 	EXP 	text: autoDraw = False
+373.0073 	EXP 	text: text = 26
+373.0073 	EXP 	text: autoDraw = True
+373.9774 	EXP 	New trial (rep=0, index=5): {'countdown': 25}
+374.0075 	EXP 	text: autoDraw = False
+374.0075 	EXP 	text: text = 25
+374.0075 	EXP 	text: autoDraw = True
+374.9776 	EXP 	New trial (rep=0, index=6): {'countdown': 24}
+375.0076 	EXP 	text: autoDraw = False
+375.0076 	EXP 	text: text = 24
+375.0076 	EXP 	text: autoDraw = True
+375.9782 	EXP 	New trial (rep=0, index=7): {'countdown': 23}
+376.0079 	EXP 	text: autoDraw = False
+376.0079 	EXP 	text: text = 23
+376.0079 	EXP 	text: autoDraw = True
+376.9784 	EXP 	New trial (rep=0, index=8): {'countdown': 22}
+377.0081 	EXP 	text: autoDraw = False
+377.0081 	EXP 	text: text = 22
+377.0081 	EXP 	text: autoDraw = True
+377.9620 	EXP 	New trial (rep=0, index=9): {'countdown': 21}
+377.9915 	EXP 	text: autoDraw = False
+377.9915 	EXP 	text: text = 21
+377.9915 	EXP 	text: autoDraw = True
+378.9775 	EXP 	New trial (rep=0, index=10): {'countdown': 20}
+379.0081 	EXP 	text: autoDraw = False
+379.0081 	EXP 	text: text = 20
+379.0081 	EXP 	text: autoDraw = True
+379.9627 	EXP 	New trial (rep=0, index=11): {'countdown': 19}
+379.9918 	EXP 	text: autoDraw = False
+379.9918 	EXP 	text: text = 19
+379.9918 	EXP 	text: autoDraw = True
+380.9620 	EXP 	New trial (rep=0, index=12): {'countdown': 18}
+380.9921 	EXP 	text: autoDraw = False
+380.9921 	EXP 	text: text = 18
+380.9921 	EXP 	text: autoDraw = True
+381.9631 	EXP 	New trial (rep=0, index=13): {'countdown': 17}
+381.9920 	EXP 	text: autoDraw = False
+381.9920 	EXP 	text: text = 17
+381.9920 	EXP 	text: autoDraw = True
+382.9626 	EXP 	New trial (rep=0, index=14): {'countdown': 16}
+382.9925 	EXP 	text: autoDraw = False
+382.9925 	EXP 	text: text = 16
+382.9925 	EXP 	text: autoDraw = True
+383.9638 	EXP 	New trial (rep=0, index=15): {'countdown': 15}
+383.9925 	EXP 	text: autoDraw = False
+383.9925 	EXP 	text: text = 15
+383.9925 	EXP 	text: autoDraw = True
+384.9629 	EXP 	New trial (rep=0, index=16): {'countdown': 14}
+384.9927 	EXP 	text: autoDraw = False
+384.9927 	EXP 	text: text = 14
+384.9927 	EXP 	text: autoDraw = True
+385.9631 	EXP 	New trial (rep=0, index=17): {'countdown': 13}
+385.9929 	EXP 	text: autoDraw = False
+385.9929 	EXP 	text: text = 13
+385.9929 	EXP 	text: autoDraw = True
+386.9640 	EXP 	New trial (rep=0, index=18): {'countdown': 12}
+386.9931 	EXP 	text: autoDraw = False
+386.9931 	EXP 	text: text = 12
+386.9931 	EXP 	text: autoDraw = True
+387.9635 	EXP 	New trial (rep=0, index=19): {'countdown': 11}
+387.9936 	EXP 	text: autoDraw = False
+387.9936 	EXP 	text: text = 11
+387.9936 	EXP 	text: autoDraw = True
+388.9632 	EXP 	New trial (rep=0, index=20): {'countdown': 10}
+388.9936 	EXP 	text: autoDraw = False
+388.9936 	EXP 	text: text = 10
+388.9936 	EXP 	text: autoDraw = True
+389.9637 	EXP 	New trial (rep=0, index=21): {'countdown': 9}
+389.9937 	EXP 	text: autoDraw = False
+389.9937 	EXP 	text: text = 9
+389.9937 	EXP 	text: autoDraw = True
+390.9643 	EXP 	New trial (rep=0, index=22): {'countdown': 8}
+390.9941 	EXP 	text: autoDraw = False
+390.9941 	EXP 	text: text = 8
+390.9941 	EXP 	text: autoDraw = True
+391.9645 	EXP 	New trial (rep=0, index=23): {'countdown': 7}
+391.9947 	EXP 	text: autoDraw = False
+391.9947 	EXP 	text: text = 7
+391.9947 	EXP 	text: autoDraw = True
+392.9649 	EXP 	New trial (rep=0, index=24): {'countdown': 6}
+392.9945 	EXP 	text: autoDraw = False
+392.9945 	EXP 	text: text = 6
+392.9945 	EXP 	text: autoDraw = True
+393.9649 	EXP 	New trial (rep=0, index=25): {'countdown': 5}
+393.9949 	EXP 	text: autoDraw = False
+393.9949 	EXP 	text: text = 5
+393.9949 	EXP 	text: autoDraw = True
+394.9647 	EXP 	New trial (rep=0, index=26): {'countdown': 4}
+394.9952 	EXP 	text: autoDraw = False
+394.9952 	EXP 	text: text = 4
+394.9952 	EXP 	text: autoDraw = True
+395.9648 	EXP 	New trial (rep=0, index=27): {'countdown': 3}
+395.9953 	EXP 	text: autoDraw = False
+395.9953 	EXP 	text: text = 3
+395.9953 	EXP 	text: autoDraw = True
+396.9651 	EXP 	New trial (rep=0, index=28): {'countdown': 2}
+396.9958 	EXP 	text: autoDraw = False
+396.9958 	EXP 	text: text = 2
+396.9958 	EXP 	text: autoDraw = True
+397.9654 	EXP 	New trial (rep=0, index=29): {'countdown': 1}
+397.9958 	EXP 	text: autoDraw = False
+397.9958 	EXP 	text: text = 1
+397.9958 	EXP 	text: autoDraw = True
+398.9656 	EXP 	New trial (rep=0, index=30): {'countdown': 0}
+398.9956 	EXP 	text: autoDraw = False
+398.9956 	EXP 	text: text = 0
+398.9956 	EXP 	text: autoDraw = True
+399.9666 	EXP 	New trial (rep=3, index=0): None
+400.0056 	EXP 	Imported stimuli.xlsx as conditions, 50 conditions, 2 params
+400.0066 	EXP 	Created sequence: random, trialTypes=50, nReps=1, seed=None
+400.0072 	EXP 	New trial (rep=0, index=0): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+400.0284 	EXP 	text: autoDraw = False
+401.5033 	EXP 	New trial (rep=0, index=1): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+403.0030 	EXP 	New trial (rep=0, index=2): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+404.5151 	EXP 	New trial (rep=0, index=3): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+406.0196 	EXP 	New trial (rep=0, index=4): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+407.5158 	EXP 	New trial (rep=0, index=5): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+409.0199 	EXP 	New trial (rep=0, index=6): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+410.5209 	EXP 	New trial (rep=0, index=7): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+412.0213 	EXP 	New trial (rep=0, index=8): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+413.5207 	EXP 	New trial (rep=0, index=9): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+415.0213 	EXP 	New trial (rep=0, index=10): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+416.5218 	EXP 	New trial (rep=0, index=11): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+418.0211 	EXP 	New trial (rep=0, index=12): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+419.5227 	EXP 	New trial (rep=0, index=13): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+421.0232 	EXP 	New trial (rep=0, index=14): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+422.5218 	EXP 	New trial (rep=0, index=15): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+424.0244 	EXP 	New trial (rep=0, index=16): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+425.5241 	EXP 	New trial (rep=0, index=17): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+427.0249 	EXP 	New trial (rep=0, index=18): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+428.5239 	EXP 	New trial (rep=0, index=19): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+430.0237 	EXP 	New trial (rep=0, index=20): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+431.5263 	EXP 	New trial (rep=0, index=21): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+433.0258 	EXP 	New trial (rep=0, index=22): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+434.5267 	EXP 	New trial (rep=0, index=23): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+436.0266 	EXP 	New trial (rep=0, index=24): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+437.5262 	EXP 	New trial (rep=0, index=25): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+439.0262 	EXP 	New trial (rep=0, index=26): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+440.5268 	EXP 	New trial (rep=0, index=27): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+442.0279 	EXP 	New trial (rep=0, index=28): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+443.5280 	EXP 	New trial (rep=0, index=29): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+445.0266 	EXP 	New trial (rep=0, index=30): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+446.5276 	EXP 	New trial (rep=0, index=31): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+448.0277 	EXP 	New trial (rep=0, index=32): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+449.5288 	EXP 	New trial (rep=0, index=33): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+451.0280 	EXP 	New trial (rep=0, index=34): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+452.5296 	EXP 	New trial (rep=0, index=35): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+454.0290 	EXP 	New trial (rep=0, index=36): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+455.5292 	EXP 	New trial (rep=0, index=37): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+457.0296 	EXP 	New trial (rep=0, index=38): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+458.5308 	EXP 	New trial (rep=0, index=39): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+460.0307 	EXP 	New trial (rep=0, index=40): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+461.5310 	EXP 	New trial (rep=0, index=41): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+463.0313 	EXP 	New trial (rep=0, index=42): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+464.5313 	EXP 	New trial (rep=0, index=43): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+466.0314 	EXP 	New trial (rep=0, index=44): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+467.5326 	EXP 	New trial (rep=0, index=45): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+469.0326 	EXP 	New trial (rep=0, index=46): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+470.5333 	EXP 	New trial (rep=0, index=47): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+472.0317 	EXP 	New trial (rep=0, index=48): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+473.5331 	EXP 	New trial (rep=0, index=49): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+475.0630 	EXP 	Imported countdown.xlsx as conditions, 31 conditions, 1 params
+475.0642 	EXP 	Created sequence: sequential, trialTypes=31, nReps=1, seed=None
+475.0651 	EXP 	New trial (rep=0, index=0): {'countdown': 30}
+475.0947 	EXP 	text: text = 30
+475.0947 	EXP 	text: autoDraw = True
+476.0490 	EXP 	New trial (rep=0, index=1): {'countdown': 29}
+476.0788 	EXP 	text: autoDraw = False
+476.0788 	EXP 	text: text = 29
+476.0788 	EXP 	text: autoDraw = True
+477.0484 	EXP 	New trial (rep=0, index=2): {'countdown': 28}
+477.0784 	EXP 	text: autoDraw = False
+477.0784 	EXP 	text: text = 28
+477.0784 	EXP 	text: autoDraw = True
+478.0485 	EXP 	New trial (rep=0, index=3): {'countdown': 27}
+478.0784 	EXP 	text: autoDraw = False
+478.0784 	EXP 	text: text = 27
+478.0784 	EXP 	text: autoDraw = True
+479.0488 	EXP 	New trial (rep=0, index=4): {'countdown': 26}
+479.0784 	EXP 	text: autoDraw = False
+479.0784 	EXP 	text: text = 26
+479.0784 	EXP 	text: autoDraw = True
+480.0493 	EXP 	New trial (rep=0, index=5): {'countdown': 25}
+480.0796 	EXP 	text: autoDraw = False
+480.0796 	EXP 	text: text = 25
+480.0796 	EXP 	text: autoDraw = True
+481.0499 	EXP 	New trial (rep=0, index=6): {'countdown': 24}
+481.0793 	EXP 	text: autoDraw = False
+481.0793 	EXP 	text: text = 24
+481.0793 	EXP 	text: autoDraw = True
+482.0494 	EXP 	New trial (rep=0, index=7): {'countdown': 23}
+482.0798 	EXP 	text: autoDraw = False
+482.0798 	EXP 	text: text = 23
+482.0798 	EXP 	text: autoDraw = True
+483.0498 	EXP 	New trial (rep=0, index=8): {'countdown': 22}
+483.0798 	EXP 	text: autoDraw = False
+483.0798 	EXP 	text: text = 22
+483.0798 	EXP 	text: autoDraw = True
+484.0502 	EXP 	New trial (rep=0, index=9): {'countdown': 21}
+484.0807 	EXP 	text: autoDraw = False
+484.0807 	EXP 	text: text = 21
+484.0807 	EXP 	text: autoDraw = True
+485.0500 	EXP 	New trial (rep=0, index=10): {'countdown': 20}
+485.0806 	EXP 	text: autoDraw = False
+485.0806 	EXP 	text: text = 20
+485.0806 	EXP 	text: autoDraw = True
+486.0500 	EXP 	New trial (rep=0, index=11): {'countdown': 19}
+486.0802 	EXP 	text: autoDraw = False
+486.0802 	EXP 	text: text = 19
+486.0802 	EXP 	text: autoDraw = True
+487.0503 	EXP 	New trial (rep=0, index=12): {'countdown': 18}
+487.0804 	EXP 	text: autoDraw = False
+487.0804 	EXP 	text: text = 18
+487.0804 	EXP 	text: autoDraw = True
+488.0505 	EXP 	New trial (rep=0, index=13): {'countdown': 17}
+488.0805 	EXP 	text: autoDraw = False
+488.0805 	EXP 	text: text = 17
+488.0805 	EXP 	text: autoDraw = True
+489.0508 	EXP 	New trial (rep=0, index=14): {'countdown': 16}
+489.0808 	EXP 	text: autoDraw = False
+489.0808 	EXP 	text: text = 16
+489.0808 	EXP 	text: autoDraw = True
+490.0517 	EXP 	New trial (rep=0, index=15): {'countdown': 15}
+490.0813 	EXP 	text: autoDraw = False
+490.0813 	EXP 	text: text = 15
+490.0813 	EXP 	text: autoDraw = True
+491.0512 	EXP 	New trial (rep=0, index=16): {'countdown': 14}
+491.0811 	EXP 	text: autoDraw = False
+491.0811 	EXP 	text: text = 14
+491.0811 	EXP 	text: autoDraw = True
+492.0517 	EXP 	New trial (rep=0, index=17): {'countdown': 13}
+492.0814 	EXP 	text: autoDraw = False
+492.0814 	EXP 	text: text = 13
+492.0814 	EXP 	text: autoDraw = True
+493.0523 	EXP 	New trial (rep=0, index=18): {'countdown': 12}
+493.0815 	EXP 	text: autoDraw = False
+493.0815 	EXP 	text: text = 12
+493.0815 	EXP 	text: autoDraw = True
+494.0518 	EXP 	New trial (rep=0, index=19): {'countdown': 11}
+494.0820 	EXP 	text: autoDraw = False
+494.0820 	EXP 	text: text = 11
+494.0820 	EXP 	text: autoDraw = True
+495.0531 	EXP 	New trial (rep=0, index=20): {'countdown': 10}
+495.0818 	EXP 	text: autoDraw = False
+495.0818 	EXP 	text: text = 10
+495.0818 	EXP 	text: autoDraw = True
+496.0523 	EXP 	New trial (rep=0, index=21): {'countdown': 9}
+496.0820 	EXP 	text: autoDraw = False
+496.0820 	EXP 	text: text = 9
+496.0820 	EXP 	text: autoDraw = True
+497.0523 	EXP 	New trial (rep=0, index=22): {'countdown': 8}
+497.0824 	EXP 	text: autoDraw = False
+497.0824 	EXP 	text: text = 8
+497.0824 	EXP 	text: autoDraw = True
+498.0526 	EXP 	New trial (rep=0, index=23): {'countdown': 7}
+498.0824 	EXP 	text: autoDraw = False
+498.0824 	EXP 	text: text = 7
+498.0824 	EXP 	text: autoDraw = True
+499.0527 	EXP 	New trial (rep=0, index=24): {'countdown': 6}
+499.0826 	EXP 	text: autoDraw = False
+499.0826 	EXP 	text: text = 6
+499.0826 	EXP 	text: autoDraw = True
+500.0529 	EXP 	New trial (rep=0, index=25): {'countdown': 5}
+500.0828 	EXP 	text: autoDraw = False
+500.0828 	EXP 	text: text = 5
+500.0828 	EXP 	text: autoDraw = True
+501.0365 	EXP 	New trial (rep=0, index=26): {'countdown': 4}
+501.0667 	EXP 	text: autoDraw = False
+501.0667 	EXP 	text: text = 4
+501.0667 	EXP 	text: autoDraw = True
+502.0363 	EXP 	New trial (rep=0, index=27): {'countdown': 3}
+502.0672 	EXP 	text: autoDraw = False
+502.0672 	EXP 	text: text = 3
+502.0672 	EXP 	text: autoDraw = True
+503.0372 	EXP 	New trial (rep=0, index=28): {'countdown': 2}
+503.0671 	EXP 	text: autoDraw = False
+503.0671 	EXP 	text: text = 2
+503.0671 	EXP 	text: autoDraw = True
+504.0375 	EXP 	New trial (rep=0, index=29): {'countdown': 1}
+504.0672 	EXP 	text: autoDraw = False
+504.0672 	EXP 	text: text = 1
+504.0672 	EXP 	text: autoDraw = True
+505.0374 	EXP 	New trial (rep=0, index=30): {'countdown': 0}
+505.0677 	EXP 	text: autoDraw = False
+505.0677 	EXP 	text: text = 0
+505.0677 	EXP 	text: autoDraw = True
+506.0383 	EXP 	New trial (rep=4, index=0): None
+506.0760 	EXP 	Imported stimuli.xlsx as conditions, 50 conditions, 2 params
+506.0769 	EXP 	Created sequence: random, trialTypes=50, nReps=1, seed=None
+506.0776 	EXP 	New trial (rep=0, index=0): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+506.0999 	EXP 	text: autoDraw = False
+507.5749 	EXP 	New trial (rep=0, index=1): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+509.0752 	EXP 	New trial (rep=0, index=2): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+510.5762 	EXP 	New trial (rep=0, index=3): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+512.0743 	EXP 	New trial (rep=0, index=4): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+513.5761 	EXP 	New trial (rep=0, index=5): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+515.0765 	EXP 	New trial (rep=0, index=6): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+516.5757 	EXP 	New trial (rep=0, index=7): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+518.0769 	EXP 	New trial (rep=0, index=8): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+519.5765 	EXP 	New trial (rep=0, index=9): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+521.0762 	EXP 	New trial (rep=0, index=10): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+522.5773 	EXP 	New trial (rep=0, index=11): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+524.0766 	EXP 	New trial (rep=0, index=12): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+525.5773 	EXP 	New trial (rep=0, index=13): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+527.0778 	EXP 	New trial (rep=0, index=14): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+528.5774 	EXP 	New trial (rep=0, index=15): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+530.0776 	EXP 	New trial (rep=0, index=16): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+531.5778 	EXP 	New trial (rep=0, index=17): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+533.0791 	EXP 	New trial (rep=0, index=18): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+534.5789 	EXP 	New trial (rep=0, index=19): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+536.0791 	EXP 	New trial (rep=0, index=20): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+537.5800 	EXP 	New trial (rep=0, index=21): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+539.0804 	EXP 	New trial (rep=0, index=22): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+540.5810 	EXP 	New trial (rep=0, index=23): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+542.0806 	EXP 	New trial (rep=0, index=24): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+543.5809 	EXP 	New trial (rep=0, index=25): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+545.0811 	EXP 	New trial (rep=0, index=26): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+546.5819 	EXP 	New trial (rep=0, index=27): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+548.0816 	EXP 	New trial (rep=0, index=28): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+549.5815 	EXP 	New trial (rep=0, index=29): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+551.0820 	EXP 	New trial (rep=0, index=30): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+552.5827 	EXP 	New trial (rep=0, index=31): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+554.0828 	EXP 	New trial (rep=0, index=32): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+555.5827 	EXP 	New trial (rep=0, index=33): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+557.0846 	EXP 	New trial (rep=0, index=34): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+558.5842 	EXP 	New trial (rep=0, index=35): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+560.0849 	EXP 	New trial (rep=0, index=36): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+561.5864 	EXP 	New trial (rep=0, index=37): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+563.0848 	EXP 	New trial (rep=0, index=38): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+564.5867 	EXP 	New trial (rep=0, index=39): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+566.0869 	EXP 	New trial (rep=0, index=40): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+567.5857 	EXP 	New trial (rep=0, index=41): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+569.0860 	EXP 	New trial (rep=0, index=42): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+570.5875 	EXP 	New trial (rep=0, index=43): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+572.0865 	EXP 	New trial (rep=0, index=44): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+573.5881 	EXP 	New trial (rep=0, index=45): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+575.0872 	EXP 	New trial (rep=0, index=46): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+576.5865 	EXP 	New trial (rep=0, index=47): {'word_stimuli': 'sounds/droite.ogg', 'isi': 0.7}
+578.0874 	EXP 	New trial (rep=0, index=48): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+579.5889 	EXP 	New trial (rep=0, index=49): {'word_stimuli': 'sounds/gauche.ogg', 'isi': 0.7}
+581.1145 	EXP 	Imported countdown.xlsx as conditions, 31 conditions, 1 params
+581.1153 	EXP 	Created sequence: sequential, trialTypes=31, nReps=1, seed=None
+581.1159 	EXP 	New trial (rep=0, index=0): {'countdown': 30}
+581.1315 	EXP 	text: text = 30
+581.1315 	EXP 	text: autoDraw = True
+582.1040 	EXP 	New trial (rep=0, index=1): {'countdown': 29}
+582.1328 	EXP 	text: autoDraw = False
+582.1328 	EXP 	text: text = 29
+582.1328 	EXP 	text: autoDraw = True
+583.1034 	EXP 	New trial (rep=0, index=2): {'countdown': 28}
+583.1330 	EXP 	text: autoDraw = False
+583.1330 	EXP 	text: text = 28
+583.1330 	EXP 	text: autoDraw = True
+584.1036 	EXP 	New trial (rep=0, index=3): {'countdown': 27}
+584.1332 	EXP 	text: autoDraw = False
+584.1332 	EXP 	text: text = 27
+584.1332 	EXP 	text: autoDraw = True
+585.1040 	EXP 	New trial (rep=0, index=4): {'countdown': 26}
+585.1334 	EXP 	text: autoDraw = False
+585.1334 	EXP 	text: text = 26
+585.1334 	EXP 	text: autoDraw = True
+586.1036 	EXP 	New trial (rep=0, index=5): {'countdown': 25}
+586.1340 	EXP 	text: autoDraw = False
+586.1340 	EXP 	text: text = 25
+586.1340 	EXP 	text: autoDraw = True
+587.0895 	EXP 	New trial (rep=0, index=6): {'countdown': 24}
+587.1041 	EXP 	text: autoDraw = False
+587.1041 	EXP 	text: text = 24
+587.1041 	EXP 	text: autoDraw = True
+588.0964 	EXP 	New trial (rep=0, index=7): {'countdown': 23}
+588.1114 	EXP 	text: autoDraw = False
+588.1114 	EXP 	text: text = 23
+588.1114 	EXP 	text: autoDraw = True
+589.0956 	EXP 	New trial (rep=0, index=8): {'countdown': 22}
+589.1260 	EXP 	text: autoDraw = False
+589.1260 	EXP 	text: text = 22
+589.1260 	EXP 	text: autoDraw = True
+590.0934 	EXP 	New trial (rep=0, index=9): {'countdown': 21}
+590.1222 	EXP 	text: autoDraw = False
+590.1222 	EXP 	text: text = 21
+590.1222 	EXP 	text: autoDraw = True
+2340.1062 	EXP 	New trial (rep=0, index=10): {'countdown': 20}
+2340.1129 	EXP 	New trial (rep=0, index=11): {'countdown': 19}
+2340.1263 	EXP 	New trial (rep=0, index=12): {'countdown': 18}
+2340.1360 	EXP 	New trial (rep=0, index=13): {'countdown': 17}
+2340.1418 	EXP 	New trial (rep=0, index=14): {'countdown': 16}
+2340.1478 	EXP 	New trial (rep=0, index=15): {'countdown': 15}
+2340.1574 	EXP 	New trial (rep=0, index=16): {'countdown': 14}
+2340.1895 	EXP 	New trial (rep=0, index=17): {'countdown': 13}
+2340.1923 	EXP 	New trial (rep=0, index=18): {'countdown': 12}
+2340.1946 	EXP 	New trial (rep=0, index=19): {'countdown': 11}
+2340.1971 	EXP 	New trial (rep=0, index=20): {'countdown': 10}
+2340.2006 	EXP 	New trial (rep=0, index=21): {'countdown': 9}
+2340.2060 	EXP 	New trial (rep=0, index=22): {'countdown': 8}
+2340.2085 	EXP 	New trial (rep=0, index=23): {'countdown': 7}
+2340.2107 	EXP 	New trial (rep=0, index=24): {'countdown': 6}
+2340.2131 	EXP 	New trial (rep=0, index=25): {'countdown': 5}
+2340.2157 	EXP 	New trial (rep=0, index=26): {'countdown': 4}
+2340.2181 	EXP 	New trial (rep=0, index=27): {'countdown': 3}
+2340.2310 	EXP 	New trial (rep=0, index=28): {'countdown': 2}
+2340.2335 	EXP 	New trial (rep=0, index=29): {'countdown': 1}
+2340.2368 	EXP 	New trial (rep=0, index=30): {'countdown': 0}
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 20
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 19
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 18
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 17
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 16
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 15
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 14
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 13
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 12
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 11
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 10
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 9
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 8
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 7
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 6
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 5
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 4
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 3
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 2
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 1
+2340.2588 	EXP 	text: autoDraw = False
+2340.2588 	EXP 	text: text = 0
+2340.2588 	EXP 	text: autoDraw = False
+2340.3641 	EXP 	window1: mouseVisible = True

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on mai 03, 2021, at 15:23
+    on mai 10, 2021, at 10:39
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\remi.DESKTOP-UI81QOM\\Desktop\\_EXPE_REMI_LAFITTE_300421\\eprime_vv_lm_290421\\sound_for_prismatic_adaptation\\list_pa_lastrun.py',
+    originPath='C:\\Users\\remi.DESKTOP-UI81QOM\\Desktop\\_EXPE_REMI_LAFITTE_060521\\sound_for_prismatic_adaptation\\list_pa_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info

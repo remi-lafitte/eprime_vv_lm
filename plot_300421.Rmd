@@ -5,17 +5,27 @@ editor_options:
 ---
 ```{r library}
 library(tidyverse)
-library("rprime")
+library(readxl)
+source("function.R")
+# library("rprime")
 ```
 
+## Visual vertical
+
+### Selection
+
+The slope must be significant.
+
 ```{r}
+y <- list()
 lf<-list.files("DATA", pattern = "csv")
 for(i in 1:length(lf)){
 lfi <- lf[i]
 df<-read.csv(paste0("DATA/", lfi), sep = ";")
  dfvv<-
   df %>% 
-  filter(Procedure.Block. == "TESTVV") %>% 
+  dplyr::filter(Generalbloc == 2 | 
+                  Generalbloc == 4) %>% 
   select(offset, vvstimresp1.CRESP, vvstimresp1.RESP,
          vvstimresp1.ACC, time) %>% 
   mutate(deg = as.numeric(offset)/10,
@@ -28,41 +38,161 @@ df<-read.csv(paste0("DATA/", lfi), sep = ";")
 print(i)
 print(table(dfvv$offset, dfvv$resp_dummy))
 
-model<-glm(resp_dummy ~ deg, family = binomial(link = "logit"), dfvv) 
+for(time in levels(as.factor(dfvv$time))){
+  dfvvt <- dfvv[dfvv$time == time,]
+  model<-glm(resp_dummy ~ deg, family =   binomial(link = "logit"), dfvvt)  
 coeff<-as.data.frame(t(summary(model)$coefficients))[1,]
+pvalue<-as.data.frame(t(summary(model)$coefficients))[4,2]
 colnames(coeff)<-c("intercept", "deg")
 pse <- -coeff$intercept/coeff$deg
 slope <- coeff$deg
 jnd <- log(3/slope)
+output <- data.frame(pse, slope, jnd,pvalue, time, i)
+y[paste0(lfi, time)]<- list(output)
+}
+}
+dfvv<-do.call(rbind, y)
+```
 
+After graphical inspection, we decide to remove the subjects 1, 6, 14. 
+
+```{r}
+dfvv %>% 
+  filter(jnd == "NaN")
+dfvvstat <- dfvv %>% 
+  filter(!i %in%  c(1,6,14))
+```
+
+### Graphical inspection
+
+```{r}
+lp<-list()
+lf<-list.files("DATA", pattern = "csv")
+for(i in 1:length(lf)){
+lfi <- lf[i]
+df<-read.csv(paste0("DATA/", lfi), sep = ";")
+ dfvv<-
+  df %>% 
+  dplyr::filter(Generalbloc == 2 | 
+                  Generalbloc == 4) %>% 
+  select(offset, vvstimresp1.CRESP, vvstimresp1.RESP,
+         vvstimresp1.ACC, time) %>% 
+  mutate(deg = as.numeric(offset)/10,
+         resp_dummy = ifelse(vvstimresp1.RESP == "1",
+                             0, 1)) %>% 
+  group_by(offset, time) %>% 
+  mutate(order = row_number()) %>% 
+  mutate(ycoord = resp_dummy + order/20) %>% 
+   ungroup()
+print(i)
+print(table(dfvv$offset, dfvv$resp_dummy))
+dfvv$time <- factor(dfvv$time, levels = c("pretest", "posttest"))
 plot<-ggplot(dfvv, aes(x = deg, y = resp_dummy, col =time, fill = as.factor(order)))+
   geom_hline(yintercept = 0.50, lty = "dashed", col = "grey40", size=0.7)+
     geom_vline(xintercept = 0, lty = "dashed", col = "grey40", size=0.7)+
   scale_x_continuous(limits=c(-2.5,2.5),breaks = seq(-2.5,2.5,0.5))+
   geom_smooth(method = "glm", method.args = list(family = "binomial"),se = F, size=1, fill = "black")+
   geom_point(aes(y = ycoord), size = 1.5, alpha = 1, width = 0.1, shape = 21, col = "black")+
-              # col = "black",fill="red"
-              # )+
-  # geom_point(aes(x=unlist(pse), y=0.5), fill="red", size=3, col = "black", shape=24,
-  #            stroke = 1.2)+
   scale_y_continuous(limits=c(-0.1,1.4),breaks = seq(0,1,0.5))+
   labs(y="% de reponse 'ligne orientee a droite'", x= "Decalage de la ligne \npar rapport a la verticale (deg)",
        title = lfi)+
   theme_bw(base_size = 10) +
-    facet_wrap(~time, ncol = 1)
+    facet_wrap(~time, ncol = 1)+
+  guides(col = F, fill = F)
 
   print(plot)
 ggsave(paste0("PLOT/VV", lfi, ".pdf"), plot, width = 6, height = 8)
 ggsave(paste0("PLOT/VV", lfi, ".svg"), plot)
-# print(lfi)
-# print("SA")
-# df %>% 
-#   filter(Procedure == "TrialSA") %>% 
-#   select(TrialSA, Mouse.X) %>% 
-#   unique() %>% 
-#   mutate(sa = as.numeric(Mouse.X) - 1280) %>% 
-#   mutate(samm = (60*sa)/2560) %>% 
-#   summarise(bias_sa = mean(samm)) %>% 
-#   print(.)
+lp[lfi]<-plot
 }
+
 ```
+
+### VV Summary
+
+```{r}
+# pre post test------------
+dfvvstat$time <- factor(dfvvstat$time, levels = c("pretest", "posttest"))
+ggplot(dfvvstat, aes(x = i, y = pse, col = time))+
+  geom_point()+
+  geom_hline(yintercept = 0)+
+  scale_x_continuous(breaks = seq(1, max(vvout$i), 1))+
+  labs(x = "Subjects", y = "PSE")+
+  theme_bw(base_size = 14)
+
+# after effect-------------
+dfvvstat_aftereffect<-
+  unwithinme(data = dfvvstat, intra = "time",id = "i", y = "pse")
+
+ggplot(data = dfvvstat_aftereffect, 
+       aes(x = subject, y = Wdiff_time))+
+  geom_point()+
+  geom_hline(yintercept = 0, lty = "dotted")+
+   geom_hline(yintercept = mean(dfvvstat_aftereffect$Wdiff_time), lty = "dashed", col = "blue")+
+  scale_y_continuous(breaks = seq(-1,1,0.5))+
+  theme_bw(base_size = 14)+
+  labs(y = "VV posttest - pretest", x = "subjects")+
+  guides(col = F, fill = F)
+
+# mean cl-------------------
+ggplot(dfvvstat, aes(x = time, y = abs(jnd), col = time, fill = time))+
+   # geom_line(col = "grey")+
+  geom_jitter(width = 0.1)+
+    stat_summary(geom = "line", col = "black", group = 1, lty = "dotted")+
+  stat_summary(fun.data = "mean_cl_boot",
+               shape = 22, col = "black")+
+  theme_bw(base_size = 14)+
+  guides(col = F, fill = F)
+```
+
+
+## Straight Ahead
+```{r}
+straight<- readxl::read_excel("DATA/STRAIGHT_AHEAD/STRAIGHT_AHEAD.xlsx")
+straight$time <- factor(straight$time, levels = c("pretest", "posttest"))
+straight$subject<-straight$subject - 103
+tmp <- aggregate(angle ~ time + subject,straight, mean)
+straight_averaged <- as.data.frame(tmp)
+straight_averaged$time <- as.factor(straight_averaged$time)
+straight_aftereffect<-wdiff(data = straight_averaged, intra = "time",id = "subject", y = "angle")
+
+ggplot(straight, aes(x = time, y = angle, col = time, fill = time))+
+   # geom_line(col = "grey")+
+  geom_jitter(width = 0.1)+
+    stat_summary(geom = "line", col = "black", group = 1, lty = "dotted")+
+  stat_summary(fun.data = "mean_cl_boot",
+               shape = 22, col = "black")+
+  theme_bw(base_size = 14)+
+  guides(col = F, fill = F)
+
+ggplot(straight_averaged, aes(x = time, y = angle, col = time, fill = time))+
+   # geom_line(col = "grey")+
+  geom_jitter(width = 0.1)+
+    stat_summary(geom = "line", col = "black", group = 1, lty = "dotted")+
+  stat_summary(fun.data = "mean_cl_boot",
+               shape = 22, col = "black")+
+  theme_bw(base_size = 14)+
+  guides(col = F, fill = F)
+
+ggplot(data = straight_aftereffect, 
+       aes(x = subject, y = intra))+
+  geom_point()+
+  geom_hline(yintercept = 0, lty = "dotted")+
+   geom_hline(yintercept = mean(straight_aftereffect$intra), lty = "dashed", col = "blue")+
+  scale_x_continuous(breaks = seq(1,max(straight_averaged$subject),1))+
+    scale_y_continuous(breaks = seq(-4,12, 2))+
+  theme_bw(base_size = 14)+
+  labs(y = "SA posttest - pretest", x = "subjects")+
+  guides(col = F, fill = F)
+
+mean(straight_aftereffect$intra)
+# after effect of 3 degrees, as in the literature.
+```
+
+## Plotting visual vertical and straight-ahead after-effects
+
+..
+```{r}
+
+```
+
